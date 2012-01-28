@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		104F0AF414C863CE003E6DB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F0AF314C863CE003E6DB6 /* UIKit.framework */; };
+		104F0AF614C863CE003E6DB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F0AF514C863CE003E6DB6 /* Foundation.framework */; };
+		104F0AF814C863CE003E6DB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F0AF714C863CE003E6DB6 /* CoreGraphics.framework */; };
+		104F0AFE14C863CE003E6DB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 104F0AFC14C863CE003E6DB6 /* InfoPlist.strings */; };
+		104F0B0014C863CE003E6DB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 104F0AFF14C863CE003E6DB6 /* main.m */; };
+		104F0B0414C863CE003E6DB6 /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 104F0B0314C863CE003E6DB6 /* KKAppDelegate.m */; };
+		104F0B0714C863CE003E6DB6 /* KKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104F0B0614C863CE003E6DB6 /* KKViewController.m */; };
+		104F0B0A14C863CE003E6DB6 /* KKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 104F0B0814C863CE003E6DB6 /* KKViewController.xib */; };
+		104F0B1214C863E8003E6DB6 /* AsyncURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 104F0B1114C863E8003E6DB6 /* AsyncURLConnection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		104F0AEF14C863CE003E6DB6 /* AsyncURLConnectionSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncURLConnectionSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		104F0AF314C863CE003E6DB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		104F0AF514C863CE003E6DB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		104F0AF714C863CE003E6DB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		104F0AFB14C863CE003E6DB6 /* AsyncURLConnectionSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AsyncURLConnectionSample-Info.plist"; sourceTree = "<group>"; };
+		104F0AFD14C863CE003E6DB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		104F0AFF14C863CE003E6DB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		104F0B0114C863CE003E6DB6 /* AsyncURLConnectionSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AsyncURLConnectionSample-Prefix.pch"; sourceTree = "<group>"; };
+		104F0B0214C863CE003E6DB6 /* KKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKAppDelegate.h; sourceTree = "<group>"; };
+		104F0B0314C863CE003E6DB6 /* KKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKAppDelegate.m; sourceTree = "<group>"; };
+		104F0B0514C863CE003E6DB6 /* KKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKViewController.h; sourceTree = "<group>"; };
+		104F0B0614C863CE003E6DB6 /* KKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKViewController.m; sourceTree = "<group>"; };
+		104F0B0914C863CE003E6DB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KKViewController.xib; sourceTree = "<group>"; };
+		104F0B1014C863E8003E6DB6 /* AsyncURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncURLConnection.h; sourceTree = "<group>"; };
+		104F0B1114C863E8003E6DB6 /* AsyncURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncURLConnection.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		104F0AEC14C863CE003E6DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104F0AF414C863CE003E6DB6 /* UIKit.framework in Frameworks */,
+				104F0AF614C863CE003E6DB6 /* Foundation.framework in Frameworks */,
+				104F0AF814C863CE003E6DB6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		104F0AE414C863CE003E6DB6 = {
+			isa = PBXGroup;
+			children = (
+				104F0AF914C863CE003E6DB6 /* AsyncURLConnectionSample */,
+				104F0AF214C863CE003E6DB6 /* Frameworks */,
+				104F0AF014C863CE003E6DB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		104F0AF014C863CE003E6DB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				104F0AEF14C863CE003E6DB6 /* AsyncURLConnectionSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		104F0AF214C863CE003E6DB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				104F0AF314C863CE003E6DB6 /* UIKit.framework */,
+				104F0AF514C863CE003E6DB6 /* Foundation.framework */,
+				104F0AF714C863CE003E6DB6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		104F0AF914C863CE003E6DB6 /* AsyncURLConnectionSample */ = {
+			isa = PBXGroup;
+			children = (
+				104F0B0214C863CE003E6DB6 /* KKAppDelegate.h */,
+				104F0B0314C863CE003E6DB6 /* KKAppDelegate.m */,
+				104F0B0514C863CE003E6DB6 /* KKViewController.h */,
+				104F0B0614C863CE003E6DB6 /* KKViewController.m */,
+				104F0B0814C863CE003E6DB6 /* KKViewController.xib */,
+				104F0AFA14C863CE003E6DB6 /* Supporting Files */,
+				104F0B1014C863E8003E6DB6 /* AsyncURLConnection.h */,
+				104F0B1114C863E8003E6DB6 /* AsyncURLConnection.m */,
+			);
+			path = AsyncURLConnectionSample;
+			sourceTree = "<group>";
+		};
+		104F0AFA14C863CE003E6DB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				104F0AFB14C863CE003E6DB6 /* AsyncURLConnectionSample-Info.plist */,
+				104F0AFC14C863CE003E6DB6 /* InfoPlist.strings */,
+				104F0AFF14C863CE003E6DB6 /* main.m */,
+				104F0B0114C863CE003E6DB6 /* AsyncURLConnectionSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		104F0AEE14C863CE003E6DB6 /* AsyncURLConnectionSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104F0B0D14C863CE003E6DB6 /* Build configuration list for PBXNativeTarget "AsyncURLConnectionSample" */;
+			buildPhases = (
+				104F0AEB14C863CE003E6DB6 /* Sources */,
+				104F0AEC14C863CE003E6DB6 /* Frameworks */,
+				104F0AED14C863CE003E6DB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsyncURLConnectionSample;
+			productName = AsyncURLConnectionSample;
+			productReference = 104F0AEF14C863CE003E6DB6 /* AsyncURLConnectionSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		104F0AE614C863CE003E6DB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 104F0AE914C863CE003E6DB6 /* Build configuration list for PBXProject "AsyncURLConnectionSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 104F0AE414C863CE003E6DB6;
+			productRefGroup = 104F0AF014C863CE003E6DB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				104F0AEE14C863CE003E6DB6 /* AsyncURLConnectionSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		104F0AED14C863CE003E6DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104F0AFE14C863CE003E6DB6 /* InfoPlist.strings in Resources */,
+				104F0B0A14C863CE003E6DB6 /* KKViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		104F0AEB14C863CE003E6DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104F0B0014C863CE003E6DB6 /* main.m in Sources */,
+				104F0B0414C863CE003E6DB6 /* KKAppDelegate.m in Sources */,
+				104F0B0714C863CE003E6DB6 /* KKViewController.m in Sources */,
+				104F0B1214C863E8003E6DB6 /* AsyncURLConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		104F0AFC14C863CE003E6DB6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				104F0AFD14C863CE003E6DB6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		104F0B0814C863CE003E6DB6 /* KKViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				104F0B0914C863CE003E6DB6 /* en */,
+			);
+			name = KKViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		104F0B0B14C863CE003E6DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		104F0B0C14C863CE003E6DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		104F0B0E14C863CE003E6DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AsyncURLConnectionSample/AsyncURLConnectionSample-Prefix.pch";
+				INFOPLIST_FILE = "AsyncURLConnectionSample/AsyncURLConnectionSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		104F0B0F14C863CE003E6DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AsyncURLConnectionSample/AsyncURLConnectionSample-Prefix.pch";
+				INFOPLIST_FILE = "AsyncURLConnectionSample/AsyncURLConnectionSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		104F0AE914C863CE003E6DB6 /* Build configuration list for PBXProject "AsyncURLConnectionSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104F0B0B14C863CE003E6DB6 /* Debug */,
+				104F0B0C14C863CE003E6DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104F0B0D14C863CE003E6DB6 /* Build configuration list for PBXNativeTarget "AsyncURLConnectionSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104F0B0E14C863CE003E6DB6 /* Debug */,
+				104F0B0F14C863CE003E6DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 104F0AE614C863CE003E6DB6 /* Project object */;
+}
