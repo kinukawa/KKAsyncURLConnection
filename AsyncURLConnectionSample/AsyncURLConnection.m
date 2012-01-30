@@ -9,23 +9,8 @@
 #import "AsyncURLConnection.h"
 
 @implementation AsyncURLConnection
-+ (id)request:(NSString *)requestUrl completeBlock:(completeBlock_t)completeBlock errorBlock:(errorBlock_t)errorBlock
-{
-    return [[[self alloc] initWithRequest:requestUrl
-                            completeBlock:completeBlock errorBlock:errorBlock] autorelease];
-}
 
-+ (void)dispatchAsyncTaskOnGlobalQueue:(taskBlock_t)taskBlock
-{
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), taskBlock);
-}
-
-+ (void)dispatchAsyncTaskOnMainQueue:(taskBlock_t)taskBlock
-{
-    dispatch_async(dispatch_get_main_queue(), taskBlock);
-}
-
-- (id)initWithRequest:(NSString *)requestUrl completeBlock:(completeBlock_t)completeBlock errorBlock:(errorBlock_t)errorBlock
+- (id)initWithURL:(NSString *)requestUrl completeBlock:(completeBlock_t)completeBlock errorBlock:(errorBlock_t)errorBlock
 {
     
     if ((self=[super init])) {
@@ -41,6 +26,53 @@
     
     return self;
 }
+
+- (id)initWithRequest:(NSURLRequest *)request 
+        completeBlock:(completeBlock_t)completeBlock 
+           errorBlock:(errorBlock_t)errorBlock
+{
+    
+    if ((self=[super init])) {
+        data_ = [[NSMutableData alloc] init];
+        
+        completeBlock_ = [completeBlock copy];
+        errorBlock_ = [errorBlock copy];
+        
+        [NSURLConnection connectionWithRequest:request delegate:self];
+    }
+    
+    return self;
+}
+
+
++ (id)requestWithURL:(NSString *)url 
+       completeBlock:(completeBlock_t)completeBlock 
+          errorBlock:(errorBlock_t)errorBlock
+{
+    return [[[self alloc] initWithURL: completeBlock
+                        completeBlock: completeBlock 
+                           errorBlock: errorBlock] autorelease];
+}
+
++ (id)requestWithRequest:(NSURLRequest *)request 
+           completeBlock:(completeBlock_t)completeBlock 
+              errorBlock:(errorBlock_t)errorBlock
+{
+    return [[[self alloc] initWithRequest:request 
+                            completeBlock:completeBlock 
+                               errorBlock:errorBlock] autorelease];
+}
+
++ (void)dispatchAsyncTaskOnGlobalQueue:(taskBlock_t)taskBlock
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), taskBlock);
+}
+
++ (void)dispatchAsyncTaskOnMainQueue:(taskBlock_t)taskBlock
+{
+    dispatch_async(dispatch_get_main_queue(), taskBlock);
+}
+
 
 - (void)dealloc
 {

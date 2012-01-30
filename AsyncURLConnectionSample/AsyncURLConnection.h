@@ -17,13 +17,16 @@ typedef void (^taskBlock_t)();
     completeBlock_t completeBlock_;
     errorBlock_t errorBlock_;
 }
++ (id)requestWithURL:(NSString *)url 
+       completeBlock:(completeBlock_t)completeBlock 
+          errorBlock:(errorBlock_t)errorBlock;
 
-+ (id)request:(NSString *)requestUrl completeBlock:(completeBlock_t)completeBlock errorBlock:(errorBlock_t)errorBlock;
++ (id)requestWithRequest:(NSURLRequest *)request 
+           completeBlock:(completeBlock_t)completeBlock 
+              errorBlock:(errorBlock_t)errorBlock;
 
 + (void)dispatchAsyncTaskOnGlobalQueue:(taskBlock_t)taskBlock;
 + (void)dispatchAsyncTaskOnMainQueue:(taskBlock_t)taskBlock;
-
-- (id)initWithRequest:(NSString *)requestUrl completeBlock:(completeBlock_t)completeBlock errorBlock:(errorBlock_t)errorBlock;
 
 
 @end
